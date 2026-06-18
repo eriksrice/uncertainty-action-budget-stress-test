@@ -1,5 +1,7 @@
 # Uncertainty-to-Action Budget Stress Test
 
+[![CI](https://github.com/eriksrice/uncertainty-action-budget-stress-test/actions/workflows/ci.yml/badge.svg)](https://github.com/eriksrice/uncertainty-action-budget-stress-test/actions/workflows/ci.yml)
+
 This project is a deterministic stress test for fixed-budget action policies under prediction uncertainty. It demonstrates a common decision-support failure mode: the cases with the highest mean model scores are not always the same cases a robust action policy should choose when prediction uncertainty matters.
 
 The proof is intentionally small. A baseline policy selects four synthetic cases by top mean score. An uncertainty-robust policy applies the same fixed budget after penalizing uncertainty width. The selected action set changes, and the change is checked against lambda sensitivity, a zero-uncertainty neutral control, a messier fixture, and assertion-integrity guards.
