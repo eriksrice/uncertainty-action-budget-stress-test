@@ -45,6 +45,17 @@ Generated artifacts:
 - `artifacts/assertion_results.json`
 - `artifacts/incident_summary.json`
 
+## Expected Output
+
+The demo should show this action-set change:
+
+| Fixture | Top-Mean Policy | Uncertainty-Robust Policy |
+|---|---|---|
+| Clean | `A, B, C, D` | `C, D, E, F` |
+| Messier | `M01, M02, M03, M04` | `M01, M03, M05, M07` |
+
+The zero-uncertainty control should preserve the top-mean selection at nonzero lambda values.
+
 ## Reviewer Path
 
 1. Run `./scripts/demo.sh`.
@@ -61,6 +72,12 @@ Generated artifacts:
 - The messier fixture preserves one high-mean moderate-uncertainty case while replacing higher-uncertainty cases.
 - The zero-uncertainty control keeps the same selected IDs at nonzero lambda values.
 - All assertions pass without copying expected labels into computed results.
+
+## Portfolio Notes
+
+- [Portfolio positioning](docs/portfolio_positioning.md)
+- [Reviewer walkthrough](docs/reviewer_walkthrough.md)
+- [Scope reassessment](docs/scope_reassessment.md)
 
 ## Out Of Scope
 
