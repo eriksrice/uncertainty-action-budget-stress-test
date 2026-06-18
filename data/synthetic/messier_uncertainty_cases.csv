@@ -1,0 +1,11 @@
+case_id,mean_score,uncertainty_width,row_purpose,top_mean_selected_expected,robust_selected_expected_lambda_0_5,robust_selected_expected_lambda_1_0
+M01,0.91,0.07,high_mean_moderate_uncertainty_should_survive,true,true,true
+M02,0.90,0.24,high_mean_high_uncertainty_at_risk,true,false,false
+M03,0.89,0.05,high_mean_low_uncertainty_should_survive,true,true,true
+M04,0.88,0.18,high_mean_elevated_uncertainty_at_risk,true,false,false
+M05,0.86,0.03,near_threshold_low_uncertainty_should_enter,false,true,true
+M06,0.85,0.14,near_threshold_moderate_uncertainty_should_not_enter,false,false,false
+M07,0.84,0.02,near_threshold_low_uncertainty_should_enter,false,true,true
+M08,0.83,0.01,low_uncertainty_but_too_low_to_enter,false,false,false
+M09,0.82,0.00,zero_uncertainty_lower_score_control,false,false,false
+M10,0.81,0.00,zero_uncertainty_lower_score_control,false,false,false

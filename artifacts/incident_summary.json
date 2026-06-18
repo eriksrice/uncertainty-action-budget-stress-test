@@ -1,0 +1,100 @@
+{
+  "action_set_changed": {
+    "clean_fixture": true,
+    "messier_fixture": true,
+    "zero_uncertainty_control": false
+  },
+  "budget": 4,
+  "fixture_ids": [
+    "clean_fixture",
+    "messier_fixture",
+    "zero_uncertainty_control"
+  ],
+  "formula": "robust_score = mean_score - lambda * uncertainty_width",
+  "lambda_values": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "public_safe_boundary": "Synthetic/public-safe example only. This artifact contains no real WTCHP data, real people, operational thresholds, clinical guidance, staffing guidance, policy recommendation, or deployment claim.",
+  "selected_ids_by_policy": {
+    "clean_fixture": {
+      "robust_lambda_0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "robust_lambda_0.5": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "robust_lambda_1": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "top_mean": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "messier_fixture": {
+      "robust_lambda_0": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "robust_lambda_0.5": [
+        "M01",
+        "M03",
+        "M05",
+        "M07"
+      ],
+      "robust_lambda_1": [
+        "M01",
+        "M03",
+        "M05",
+        "M07"
+      ],
+      "top_mean": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ]
+    },
+    "zero_uncertainty_control": {
+      "robust_lambda_0": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "robust_lambda_0.5": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "robust_lambda_1": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "top_mean": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    }
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "all_passed": true,
+  "assertion_names": [
+    "clean_fixture_top_mean_matches_expected",
+    "clean_fixture_lambda_0_5_matches_expected",
+    "clean_fixture_lambda_1_0_matches_expected",
+    "clean_fixture_lambda_0_0_matches_top_mean",
+    "clean_fixture_expected_and_computed_selected_ids_are_distinct",
+    "clean_fixture_copied_expected_selected_ids_fail_self_comparison_guard",
+    "clean_fixture_missing_expected_values_fail_closed",
+    "messier_fixture_top_mean_matches_expected",
+    "messier_fixture_lambda_0_5_matches_expected",
+    "messier_fixture_lambda_1_0_matches_expected",
+    "messier_fixture_lambda_0_0_matches_top_mean",
+    "messier_fixture_expected_and_computed_selected_ids_are_distinct",
+    "messier_fixture_copied_expected_selected_ids_fail_self_comparison_guard",
+    "messier_fixture_missing_expected_values_fail_closed",
+    "zero_uncertainty_control_matches_top_mean_for_lambda_0.5",
+    "zero_uncertainty_control_matches_top_mean_for_lambda_1"
+  ],
+  "computed_values": {
+    "clean_fixture_copied_expected_selected_ids_fail_self_comparison_guard": "FAIL: computed IDs came from expected fixture labels",
+    "clean_fixture_expected_and_computed_selected_ids_are_distinct": {
+      "computed_source": "policy_runner",
+      "selected_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "clean_fixture_lambda_0_0_matches_top_mean": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "clean_fixture_lambda_0_5_matches_expected": [
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "clean_fixture_lambda_1_0_matches_expected": [
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "clean_fixture_missing_expected_values_fail_closed": "Missing expected value for A.top_mean_selected_expected",
+    "clean_fixture_top_mean_matches_expected": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "messier_fixture_copied_expected_selected_ids_fail_self_comparison_guard": "FAIL: computed IDs came from expected fixture labels",
+    "messier_fixture_expected_and_computed_selected_ids_are_distinct": {
+      "computed_source": "policy_runner",
+      "selected_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ]
+    },
+    "messier_fixture_lambda_0_0_matches_top_mean": [
+      "M01",
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "messier_fixture_lambda_0_5_matches_expected": [
+      "M01",
+      "M03",
+      "M05",
+      "M07"
+    ],
+    "messier_fixture_lambda_1_0_matches_expected": [
+      "M01",
+      "M03",
+      "M05",
+      "M07"
+    ],
+    "messier_fixture_missing_expected_values_fail_closed": "Missing expected value for M01.top_mean_selected_expected",
+    "messier_fixture_top_mean_matches_expected": [
+      "M01",
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "zero_uncertainty_control_matches_top_mean_for_lambda_0.5": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "zero_uncertainty_control_matches_top_mean_for_lambda_1": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "expected_values": {
+    "clean_fixture_copied_expected_selected_ids_fail_self_comparison_guard": "guard rejects computed IDs copied from expected fixture labels",
+    "clean_fixture_expected_and_computed_selected_ids_are_distinct": "computed values must be derived from policy code",
+    "clean_fixture_lambda_0_0_matches_top_mean": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "clean_fixture_lambda_0_5_matches_expected": [
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "clean_fixture_lambda_1_0_matches_expected": [
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "clean_fixture_missing_expected_values_fail_closed": "missing expected value raises ValueError",
+    "clean_fixture_top_mean_matches_expected": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "messier_fixture_copied_expected_selected_ids_fail_self_comparison_guard": "guard rejects computed IDs copied from expected fixture labels",
+    "messier_fixture_expected_and_computed_selected_ids_are_distinct": "computed values must be derived from policy code",
+    "messier_fixture_lambda_0_0_matches_top_mean": [
+      "M01",
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "messier_fixture_lambda_0_5_matches_expected": [
+      "M01",
+      "M03",
+      "M05",
+      "M07"
+    ],
+    "messier_fixture_lambda_1_0_matches_expected": [
+      "M01",
+      "M03",
+      "M05",
+      "M07"
+    ],
+    "messier_fixture_missing_expected_values_fail_closed": "missing expected value raises ValueError",
+    "messier_fixture_top_mean_matches_expected": [
+      "M01",
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "zero_uncertainty_control_matches_top_mean_for_lambda_0.5": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "zero_uncertainty_control_matches_top_mean_for_lambda_1": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  "pass_fail_results": {
+    "clean_fixture_copied_expected_selected_ids_fail_self_comparison_guard": true,
+    "clean_fixture_expected_and_computed_selected_ids_are_distinct": true,
+    "clean_fixture_lambda_0_0_matches_top_mean": true,
+    "clean_fixture_lambda_0_5_matches_expected": true,
+    "clean_fixture_lambda_1_0_matches_expected": true,
+    "clean_fixture_missing_expected_values_fail_closed": true,
+    "clean_fixture_top_mean_matches_expected": true,
+    "messier_fixture_copied_expected_selected_ids_fail_self_comparison_guard": true,
+    "messier_fixture_expected_and_computed_selected_ids_are_distinct": true,
+    "messier_fixture_lambda_0_0_matches_top_mean": true,
+    "messier_fixture_lambda_0_5_matches_expected": true,
+    "messier_fixture_lambda_1_0_matches_expected": true,
+    "messier_fixture_missing_expected_values_fail_closed": true,
+    "messier_fixture_top_mean_matches_expected": true,
+    "zero_uncertainty_control_matches_top_mean_for_lambda_0.5": true,
+    "zero_uncertainty_control_matches_top_mean_for_lambda_1": true
+  },
+  "results": [
+    {
+      "computed": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "detail": "baseline top-mean selected IDs",
+      "expected": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "name": "clean_fixture_top_mean_matches_expected",
+      "passed": true
+    },
+    {
+      "computed": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "detail": "robust selected IDs at lambda 0.5",
+      "expected": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "name": "clean_fixture_lambda_0_5_matches_expected",
+      "passed": true
+    },
+    {
+      "computed": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "detail": "robust selected IDs at lambda 1.0",
+      "expected": [
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "name": "clean_fixture_lambda_1_0_matches_expected",
+      "passed": true
+    },
+    {
+      "computed": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "detail": "lambda 0.0 should reduce to top-mean selection",
+      "expected": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "name": "clean_fixture_lambda_0_0_matches_top_mean",
+      "passed": true
+    },
+    {
+      "computed": {
+        "computed_source": "policy_runner",
+        "selected_ids": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "detail": "PASS",
+      "expected": "computed values must be derived from policy code",
+      "name": "clean_fixture_expected_and_computed_selected_ids_are_distinct",
+      "passed": true
+    },
+    {
+      "computed": "FAIL: computed IDs came from expected fixture labels",
+      "detail": "negative guard behaved as expected",
+      "expected": "guard rejects computed IDs copied from expected fixture labels",
+      "name": "clean_fixture_copied_expected_selected_ids_fail_self_comparison_guard",
+      "passed": true
+    },
+    {
+      "computed": "Missing expected value for A.top_mean_selected_expected",
+      "detail": "PASS",
+      "expected": "missing expected value raises ValueError",
+      "name": "clean_fixture_missing_expected_values_fail_closed",
+      "passed": true
+    },
+    {
+      "computed": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "detail": "baseline top-mean selected IDs",
+      "expected": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "name": "messier_fixture_top_mean_matches_expected",
+      "passed": true
+    },
+    {
+      "computed": [
+        "M01",
+        "M03",
+        "M05",
+        "M07"
+      ],
+      "detail": "robust selected IDs at lambda 0.5",
+      "expected": [
+        "M01",
+        "M03",
+        "M05",
+        "M07"
+      ],
+      "name": "messier_fixture_lambda_0_5_matches_expected",
+      "passed": true
+    },
+    {
+      "computed": [
+        "M01",
+        "M03",
+        "M05",
+        "M07"
+      ],
+      "detail": "robust selected IDs at lambda 1.0",
+      "expected": [
+        "M01",
+        "M03",
+        "M05",
+        "M07"
+      ],
+      "name": "messier_fixture_lambda_1_0_matches_expected",
+      "passed": true
+    },
+    {
+      "computed": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "detail": "lambda 0.0 should reduce to top-mean selection",
+      "expected": [
+        "M01",
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "name": "messier_fixture_lambda_0_0_matches_top_mean",
+      "passed": true
+    },
+    {
+      "computed": {
+        "computed_source": "policy_runner",
+        "selected_ids": [
+          "M01",
+          "M02",
+          "M03",
+          "M04"
+        ]
+      },
+      "detail": "PASS",
+      "expected": "computed values must be derived from policy code",
+      "name": "messier_fixture_expected_and_computed_selected_ids_are_distinct",
+      "passed": true
+    },
+    {
+      "computed": "FAIL: computed IDs came from expected fixture labels",
+      "detail": "negative guard behaved as expected",
+      "expected": "guard rejects computed IDs copied from expected fixture labels",
+      "name": "messier_fixture_copied_expected_selected_ids_fail_self_comparison_guard",
+      "passed": true
+    },
+    {
+      "computed": "Missing expected value for M01.top_mean_selected_expected",
+      "detail": "PASS",
+      "expected": "missing expected value raises ValueError",
+      "name": "messier_fixture_missing_expected_values_fail_closed",
+      "passed": true
+    },
+    {
+      "computed": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "detail": "zero uncertainty should preserve top-mean selection",
+      "expected": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "name": "zero_uncertainty_control_matches_top_mean_for_lambda_0.5",
+      "passed": true
+    },
+    {
+      "computed": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "detail": "zero uncertainty should preserve top-mean selection",
+      "expected": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "name": "zero_uncertainty_control_matches_top_mean_for_lambda_1",
+      "passed": true
+    }
+  ],
+  "self_comparison_guard_result": [
+    {
+      "computed": "FAIL: computed IDs came from expected fixture labels",
+      "detail": "negative guard behaved as expected",
+      "expected": "guard rejects computed IDs copied from expected fixture labels",
+      "name": "clean_fixture_copied_expected_selected_ids_fail_self_comparison_guard",
+      "passed": true
+    },
+    {
+      "computed": "FAIL: computed IDs came from expected fixture labels",
+      "detail": "negative guard behaved as expected",
+      "expected": "guard rejects computed IDs copied from expected fixture labels",
+      "name": "messier_fixture_copied_expected_selected_ids_fail_self_comparison_guard",
+      "passed": true
+    }
+  ]
+}

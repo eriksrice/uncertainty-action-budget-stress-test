@@ -1,0 +1,14 @@
+[project]
+name = "uncertainty-action-budget-stress-test"
+version = "0.1.0"
+description = "Deterministic stress test for fixed-budget action policies under prediction uncertainty."
+requires-python = ">=3.9"
+
+[project.scripts]
+uncertainty-action = "uncertainty_action.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

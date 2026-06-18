@@ -1,0 +1,11 @@
+case_id,mean_score,uncertainty_width,row_purpose,top_mean_selected_expected,robust_selected_expected_lambda_0_5,robust_selected_expected_lambda_1_0
+A,0.93,0.00,zero_uncertainty_control_baseline_selected,true,true,true
+B,0.90,0.00,zero_uncertainty_control_baseline_selected,true,true,true
+C,0.87,0.00,zero_uncertainty_control_baseline_selected,true,true,true
+D,0.85,0.00,zero_uncertainty_control_baseline_selected,true,true,true
+E,0.83,0.00,zero_uncertainty_control_not_selected,false,false,false
+F,0.81,0.00,zero_uncertainty_control_not_selected,false,false,false
+G,0.80,0.00,zero_uncertainty_control_not_selected,false,false,false
+H,0.78,0.00,zero_uncertainty_control_not_selected,false,false,false
+I,0.76,0.00,zero_uncertainty_control_not_selected,false,false,false
+J,0.74,0.00,zero_uncertainty_control_not_selected,false,false,false

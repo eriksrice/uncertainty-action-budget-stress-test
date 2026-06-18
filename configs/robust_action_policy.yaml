@@ -1,0 +1,12 @@
+formula_name: robust_action_score
+expression: robust_score = mean_score - lambda * uncertainty_width
+budget: 4
+lambda_values:
+  - 0.0
+  - 0.5
+  - 1.0
+tie_breaker:
+  - higher_robust_score
+  - higher_mean_score
+  - ascending_case_id
+neutral_control: zero_uncertainty_control
