@@ -75,6 +75,7 @@ The zero-uncertainty control should preserve the top-mean selection at nonzero l
 
 ## Portfolio Notes
 
+- [Project summary](PROJECT_SUMMARY.md)
 - [Portfolio positioning](docs/portfolio_positioning.md)
 - [Reviewer walkthrough](docs/reviewer_walkthrough.md)
 - [Scope reassessment](docs/scope_reassessment.md)
