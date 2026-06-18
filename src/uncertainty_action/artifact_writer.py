@@ -40,6 +40,8 @@ def write_top_mean_policy(
         "",
         PUBLIC_SAFE_NOTE,
         "",
+        "This is the baseline policy: spend the fixed action budget on the highest mean model scores.",
+        "",
         f"Budget: `{contract.budget}`",
         "",
         "Selection rule: descending `mean_score`, then ascending `case_id`.",
@@ -67,6 +69,8 @@ def write_uncertainty_robust_policy(
         "# Uncertainty-Robust Policy",
         "",
         PUBLIC_SAFE_NOTE,
+        "",
+        "This policy treats prediction uncertainty as decision risk before spending the same fixed action budget.",
         "",
         f"Formula: `{contract.expression}`",
         "",
@@ -103,7 +107,7 @@ def write_action_set_diff(
         "",
         PUBLIC_SAFE_NOTE,
         "",
-        "The baseline action set is selected by top mean score. The robust action set uses lambda `0.5`.",
+        "This is the central proof artifact. The baseline action set is selected by top mean score. The robust action set uses lambda `0.5` and the same fixed budget.",
         "",
     ]
     for fixture_id, rows in fixtures.items():
@@ -119,7 +123,7 @@ def write_action_set_diff(
                 f"Removed IDs: `{selected_ids_text(diff['removed_ids'])}`",
                 f"Added IDs: `{selected_ids_text(diff['added_ids'])}`",
                 "",
-                "Plain-English explanation: cases leave the fixed budget when their uncertainty width lowers their robust score enough for lower-uncertainty cases to enter.",
+                "Plain-English explanation: cases leave the fixed budget when uncertainty width lowers their robust score enough for lower-uncertainty cases to enter. This is a decision-policy change, not a model-training result.",
                 "",
             ]
         )
@@ -135,6 +139,8 @@ def write_formula_sensitivity_table(
         "# Formula Sensitivity Table",
         "",
         PUBLIC_SAFE_NOTE,
+        "",
+        "This table is an anti-rigging check. Lambda `0.0` should match the top-mean policy, nonzero lambdas should be reported together, and the zero-uncertainty control should preserve the baseline action set.",
         "",
         "| Fixture | Lambda | Selected IDs | Changed From Top Mean |",
         "|---|---:|---|---|",

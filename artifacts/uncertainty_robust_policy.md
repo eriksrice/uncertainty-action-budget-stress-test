@@ -2,6 +2,8 @@
 
 Synthetic/public-safe example only. This artifact contains no real WTCHP data, real people, operational thresholds, clinical guidance, staffing guidance, policy recommendation, or deployment claim.
 
+This policy treats prediction uncertainty as decision risk before spending the same fixed action budget.
+
 Formula: `robust_score = mean_score - lambda * uncertainty_width`
 
 Lambda values: `0, 0.5, 1`

@@ -2,6 +2,8 @@
 
 Synthetic/public-safe example only. This artifact contains no real WTCHP data, real people, operational thresholds, clinical guidance, staffing guidance, policy recommendation, or deployment claim.
 
+This table is an anti-rigging check. Lambda `0.0` should match the top-mean policy, nonzero lambdas should be reported together, and the zero-uncertainty control should preserve the baseline action set.
+
 | Fixture | Lambda | Selected IDs | Changed From Top Mean |
 |---|---:|---|---|
 | clean_fixture | 0 | A, B, C, D | false |
